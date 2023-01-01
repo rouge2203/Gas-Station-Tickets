@@ -1,0 +1,64 @@
+{% load static %}
+
+<head>
+  
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href=" {% static 'plugins/fontawesome-free/css/all.min.css' %} ">
+  <!-- Theme style -->
+  <link rel="stylesheet" href=" {% static 'dist/css/adminlte.min.css' %} ">
+
+  <!-- REQUIRED SCRIPTS -->
+  <!-- jQuery -->
+  <script src=" {% static 'plugins/jquery/jquery.min.js' %} "></script>
+  <!-- Bootstrap 4 -->
+  <script src=" {% static 'plugins/bootstrap/js/bootstrap.bundle.min.js' %} "></script>
+  <script src=" {% static 'plugins/bootstrap/js/bootstrap.bundle.js' %} "></script>
+  <!-- AdminLTE App -->
+  <script src=" {% static 'dist/js/adminlte.min.js' %} "></script>
+
+</head>
+<body class="hold-transition layout-top-nav">
+<div class="wrapper">
+  
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand-md navbar-light navbar-white">
+      
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+        <!-- Botón Cerrar Sesion -->
+          <li class="nav-item">
+            <a class="nav-link" style="cursor:pointer" data-toggle="modal" data-target="#ModalCerrarSesionn">Cerrar Sesión</a>
+          </li>
+    </ul>
+
+</nav>
+
+
+
+
+  <!-- Modal Cerrar Sesion -->
+<div class="modal fade" id="ModalCerrarSesionn" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Cerrar Sesión</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ¿Está seguro que desea cerrar sesion?
+      </div>
+      <div class="modal-footer">
+        <a href="" type="button" class="btn btn-primary">Cerrar Sesión</a>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Volver</button>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+
+</body>
